@@ -1,12 +1,12 @@
 <?php
-$filename = "happy.jpg";
-$alt = "happy life";
-$classname = "box";
+$url = "https://www.google.com";
+$text = "Visit Google";
+$target = "_blank";
 
 /* concatenation */
-echo "<img src='images/" . $filename . "' alt='" . $alt . "' class='" . $classname . "'>";
+echo "<a href='" . $url . "' target='" . $target . "'>" . $text . "</a>";
 
 echo "<br><br>";
 
 /* embedded variables */
-echo "<img src='images/$filename' alt='$alt' class='$classname'>";
+echo "<a href='$url' target='$target'>$text</a>";
